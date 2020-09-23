@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ewaste.collection"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name="com.ewaste.collection.constants.BaseApp"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        tools:replace="android:supportsRtl">
+        <activity
+            android:name="com.ewaste.collection.activity.DetailOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ewaste.collection.activity.MapsMerchantActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ewaste.collection.activity.DetailMerchantActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ewaste.collection.activity.PicklocationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ewaste.collection.activity.AllMerchantActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ewaste.collection.activity.AllBeritaActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ewaste.collection.activity.WalletActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ewaste.collection.activity.ChatActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.ewaste.collection.utils.api.service.MessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.ewaste.collection.activity.RateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Login_phone"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ewaste.collection.activity.CreditcardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Login_phone"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ewaste.collection.activity.WithdrawActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Login_phone"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ewaste.collection.activity.SplashActivity"
+            android:noHistory="true"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ewaste.collection.activity.IntroActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ewaste.collection.activity.BeritaDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ewaste.collection.activity.TopupSaldoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ewaste.collection.activity.RideCarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ewaste.collection.activity.RentCarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ewaste.collection.activity.SendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ewaste.collection.activity.SendDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ewaste.collection.activity.ProgressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ewaste.collection.activity.PrivacyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/noActionBar" />
+        <activity
+            android:name="com.ewaste.collection.activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/noActionBar" />
+        <activity
+            android:name="com.ewaste.collection.activity.EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/noActionBar" />
+        <activity
+            android:name="com.ewaste.collection.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Login_phone"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ewaste.collection.activity.LupapassActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Login_phone"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ewaste.collection.activity.ChangepassActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Login_phone"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.ewaste.collection.activity.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.ewaste.collection.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>
