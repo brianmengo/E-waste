@@ -1,0 +1,1 @@
+# E-waste is a mobile application that will be acting as a link between the electronic waste disposers and e-waste collection center by providing delivery services to the designated areas through collection, booking and proper disposal of the waste to the e-waste centres for recycling and reusing of the items.
